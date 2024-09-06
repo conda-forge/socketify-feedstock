@@ -20,7 +20,7 @@ source:
     folder: src/socketify/uWebSockets/uSockets
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
