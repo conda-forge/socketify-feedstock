@@ -1,5 +1,5 @@
 {% set name = "socketify" %}
-{% set version = "0.0.28" %}
+{% set version = "0.0.29" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/cirospaciari/socketify.py/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 4f0ad5b41c9b4478e00c6ad0e0455a2e305d2e54b8aba7e61b5138ff717c15f2
+    sha256: 55172159512b3805094bd50cdb542261e20ea1e4e23daf022c8d83ca3382c8ee
     patches:
       - fix_native_makefile.diff
 
@@ -20,8 +20,8 @@ source:
     folder: src/socketify/uWebSockets/uSockets
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
