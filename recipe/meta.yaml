@@ -1,5 +1,5 @@
 {% set name = "socketify" %}
-{% set version = "0.0.30" %}
+{% set version = "0.0.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/cirospaciari/socketify.py/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 37692cb62147542a77951a19e4b81b61a2e20609b6d135e0e2cd206017e240cb
+    sha256: 150b07ebdf70bfca2ac3f1da67e8225f8947e9236cf0eb1d9ac26f9ea09295c0
     patches:
       - fix_native_makefile.diff
 
